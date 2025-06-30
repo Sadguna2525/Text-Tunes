@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PDF to Audio Converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.iconify.design/2/2.0.0/iconify.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            Text-Tunes</h1>
+        <p>PDF to audio converter</p>
+        <div id="drop-zone" class="drop-zone">
+            <div class="together">
+                <div class="pdf icon">
+                    <i class="fa-regular fa-file-pdf" id="pdf"></i>
+                </div>
+                <p style="font-size: 2em;">&rarrb;</p>
+                <div class="audio icon">
+                    <i class="iconify" data-icon="bi:filetype-mp3" id="audio" data-width="45"></i>
+                </div>
+            </div>
+            <p>Drag and drop a file here or click to upload</p>
+            <!-- To hide choose file button display:none-->
+            <input type="file" id="file-input" style="display: none;">
+        </div>
+        <button id="choose-file-button" type="button">Choose File</button>
+        <button id="submit-button" type="button">Submit</button>
+        <div id="file-name-display"></div>
+        <div id="audio-controls" >
+            <audio id="audio-player" controls autoplay loop></audio>
+            <a id="download-link" href="#" download>Download Audio</a>
+        </div>
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- The HTML file defines the structure and content of the web page. -->

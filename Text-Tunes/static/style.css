@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('uploads/bgimg.jpg');
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 350px;
+    max-width: 350px;
+}
+
+h1 {
+    color: rgba(255, 255, 255, 0.987);
+    font-family: serif;
+}
+
+p {
+    color: #ffffffdc;
+}
+
+.drop-zone {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.309);
+    transition: background-color 0.3s ease;
+}
+
+.drop-zone:hover {
+    background-color: #00000082;
+    border: 1px solid #007bff;
+    cursor: pointer;
+}
+
+.drop-zone p {
+    color: #007bff;
+    font-size: 16px;
+}
+
+.drop-zone i {
+    color: #f9f9f9;
+    font-size: 45px;
+    font-weight: 0px;
+}
+
+.together {
+    width: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 110px;
+}
+
+
+#audio {
+    margin-top: 10px;
+    font-size: 45px;
+    color: #f9f9f9;
+    font-weight: bold;
+}
+
+/* .pdf icon {
+    margin-top: 10px;
+    width: 45px;
+    height: 45px;
+    margin-right: 30px;
+}
+
+.audio icon {
+    width: 45px;
+    height: 45px;
+    margin-top: 0px;
+} */
+
+#choose-file-button,
+#submit-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#choose-file-button:hover,
+#submit-button:hover {
+    background-color: #0056b3;
+}
+
+#file-name-display {
+    margin: 10px 0;
+    color: #fff;
+}
+
+#audio-controls {
+    margin-top: 20px;
+}
+
+audio {
+    width: 100%;
+    border-radius: 80px;
+    outline: none;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #d5c9c978;
+}
+
+#download-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+#download-link:hover {
+    color: #d4d8de;
+    text-decoration: underline;
+}
